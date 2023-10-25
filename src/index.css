@@ -57,3 +57,7 @@ article h3 {
   color: var(--link);
   margin-bottom: 0rem;
 }
+img{
+  width: 400px;
+  height: 300px;
+}
