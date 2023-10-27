@@ -16,10 +16,11 @@ function Article({ title, date = "January 1, 1970", preview, minutesToRead }) {
     <article>
       <h3>{title}</h3>
       <small>{date}</small>
-      <p>{preview}</p>
       <p>
         {emojiString} {minutesToRead} min read
       </p>
+      <p>{preview}</p>
+      
     </article>
   );
 }

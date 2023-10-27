@@ -10,6 +10,7 @@ function ArticleList({ posts }) {
           title={post.title}
           date={post.date}
           preview={post.preview}
+          minutesToRead={post.minutesToRead} // Pass minutesToRead as a prop
         />
       ))}
     </main>

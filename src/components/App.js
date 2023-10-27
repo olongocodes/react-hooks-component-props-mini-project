@@ -15,10 +15,24 @@ const posts = [
   {
     id: 1,
     title: "Wild Animal",
-    date: "January 1, 1970",
+    date: "September 25, 2020",
     preview: "Don't joke around with wild animals",
+    minutesToRead: 1, // Add minutesToRead value
   },
-  // Add more posts as needed
+  {
+    id: 2,
+    title: "Pet",
+    date: "July 13, 2023",
+    preview: "I am a pet, I can stay with human beings",
+    minutesToRead: 5, 
+  },
+  {
+    id: 3,
+    title: "Wild Animal",
+    date: "October 25, 2023",
+    preview: "I am just a simple zebra, I am not so wild",
+    minutesToRead: 4, // Add minutesToRead value
+  },
 ];
 
 function App() {
@@ -26,8 +40,6 @@ function App() {
     <div className="App">
       <Header name={blogData.name} />
       <About img={blogData.image} alt={blogData.alt} aboutme={blogData.about} />
-      <ArticleList posts={posts} />
-      <ArticleList posts={posts} />
       <ArticleList posts={posts} />
     </div>
   );
