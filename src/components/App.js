@@ -27,6 +27,8 @@ function App() {
       <Header name={blogData.name} />
       <About img={blogData.image} alt={blogData.alt} aboutme={blogData.about} />
       <ArticleList posts={posts} />
+      <ArticleList posts={posts} />
+      <ArticleList posts={posts} />
     </div>
   );
 }
