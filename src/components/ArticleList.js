@@ -1,14 +1,19 @@
 import React from "react";
 import Article from "./Article";
 
-function ArticleList() {
+function ArticleList({ posts }) {
   return (
     <main>
-      <Article
-        title="Wild Animal"
-        preview="Dont joke around with wild Animals"
-      />
+      {posts.map((post) => (
+        <Article
+          key={post.id}
+          title={post.title}
+          date={post.date}
+          preview={post.preview}
+        />
+      ))}
     </main>
   );
 }
+
 export default ArticleList;
